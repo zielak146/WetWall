@@ -22,3 +22,31 @@ burgerBtn.addEventListener('click', () => {
 	navMenu.classList.toggle('active-menu');
 	menuToggle.classList.toggle('active');
 });
+
+const sliderBox = document.querySelector('.slider-box');
+const leftBtn = document.querySelector('.btn-left');
+const rightBtn = document.querySelector('.btn-right');
+const carouselImages = document.querySelectorAll('.slider-img');
+const carouselWidth = 1000;
+const carouselspeed = 3000;
+
+let index = 0;
+
+const handleCarousel = () => {
+	index++;
+	changeImage;
+};
+
+let startCarousel = setInterval(handleCarousel, carouselspeed);
+
+const changeImage = () => {
+	if (index > carouselImages.length - 1) {
+		index = 0;
+	} else if (index < 0) {
+		index = carouselImages.length - 1;
+	}
+
+	sliderBox.computedStyleMap.transform = `translateX(${
+		-index * carouselWidth
+	}px)`;
+};
