@@ -1,0 +1,124 @@
+@use '../scss/colors' as *;
+
+$standard: 2.4rem;
+@mixin burgerBtn {
+	position: absolute;
+	right: 0;
+	height: 3px;
+	content: '';
+	background-color: $main-color;
+	transition: width 0.3s;
+}
+
+.btn {
+	padding: 0.5em 2em;
+	background-color: white;
+	color: $main-color;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 0.3s;
+	&:hover {
+		transform: scale(0.9);
+	}
+}
+a:focus {
+	outline: none;
+	border: none;
+	color: rgb(244, 242, 242);
+	border-radius: 8px;
+}
+.small-wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 800px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.section-padding {
+	padding: 2em 1em;
+}
+.section-heading {
+	// font-weight: 500;
+	margin: 0 auto;
+
+	// margin: 0.5em;
+	padding: 0.2em 0.3em;
+	font-size: 1.6rem;
+	letter-spacing: 1px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	// text-transform: uppercase;
+	color: white;
+	// width: 500px;
+}
+
+.lead {
+	
+	text-align: center;
+	color: $main-color;
+	// font-weight: bold;
+	font-size: 1.2rem;
+	margin: 1em 0;
+	text-transform: uppercase;
+}
+
+.white-section {
+	// gap: 4em;
+	padding: 2em 1em;
+	background-color: white;
+}
+
+.white-block {
+	position: absolute;
+	height: 35px;
+	width: 60%;
+	background-color: white;
+
+	&-left {
+		bottom: -2px;
+		left: -50px;
+		transform: skew(45deg);
+		&--gray {
+			background-color: $secondary-color;
+		}
+	}
+	&-right {
+		top: -2px;
+		right: -50px;
+		transform: skew(45deg);
+	}
+}
+
+.hidden {
+	opacity: 0;
+	transform: translateX(-101%);
+	filter: blur(5px);
+	transition: all 2s;
+}
+
+.show {
+	opacity: 1;
+	transform: translateX(0);
+	filter: blur(0);
+}
+.active {
+	opacity: 1;
+	pointer-events: auto;
+}
+.dark-mode {
+	background-color: #252525;
+	color: white;
+}
+.dark-mode-gradient {
+	background: $header-gradient2;
+}

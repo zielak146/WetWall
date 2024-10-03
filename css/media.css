@@ -1,0 +1,164 @@
+.btn {
+  padding: 0.5em 2em;
+  background-color: white;
+  color: rgb(72, 207, 203);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  transform: scale(0.9);
+}
+
+a:focus {
+  outline: none;
+  border: none;
+  color: rgb(244, 242, 242);
+  border-radius: 8px;
+}
+
+.small-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.section-padding {
+  padding: 2em 1em;
+}
+
+.section-heading {
+  margin: 0 auto;
+  padding: 0.2em 0.3em;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.lead {
+  text-align: center;
+  color: rgb(72, 207, 203);
+  font-size: 1.2rem;
+  margin: 1em 0;
+  text-transform: uppercase;
+}
+
+.white-section {
+  padding: 2em 1em;
+  background-color: white;
+}
+
+.white-block {
+  position: absolute;
+  height: 35px;
+  width: 60%;
+  background-color: white;
+}
+.white-block-left {
+  bottom: -2px;
+  left: -50px;
+  transform: skew(45deg);
+}
+.white-block-left--gray {
+  background-color: rgba(79, 79, 82, 0.853);
+}
+.white-block-right {
+  top: -2px;
+  right: -50px;
+  transform: skew(45deg);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-101%);
+  filter: blur(5px);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
+}
+
+.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dark-mode {
+  background-color: #252525;
+  color: white;
+}
+
+.dark-mode-gradient {
+  background: linear-gradient(45deg, rgba(37, 37, 37, 0.65), rgba(37, 37, 37, 0.6));
+}
+
+@media (min-width: 768px) {
+  .quote__boxes {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  .contact-bar {
+    display: block;
+  }
+  .nav {
+    top: 50px;
+  }
+  .header__box {
+    width: 50%;
+  }
+  .about__boxes {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .about__box {
+    width: 100%;
+  }
+  .about__box-info {
+    width: 50%;
+  }
+  .about__box-title {
+    font-size: 2rem;
+  }
+  .about__box-lead {
+    font-size: 1.4rem;
+  }
+  .about__box-btn {
+    width: 40%;
+    margin: 1em 0;
+  }
+  .about__box-img {
+    background-image: url(../img/small-bathroom-with-modern-design-style.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all 1s;
+  }
+  .about__box-img:hover {
+    transform: scale(0.9);
+    height: 100vh;
+    border-radius: 8px;
+  }
+  .packages__boxes {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .packages__box {
+    width: 30%;
+  }
+}/*# sourceMappingURL=media.css.map */

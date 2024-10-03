@@ -1,0 +1,71 @@
+@use '../scss/colors' as *;
+@use '../scss/components' as *;
+
+@media (min-width: 768px) {
+	.quote {
+		&__boxes {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.contact-bar {
+		display: block;
+
+		// justify-content: space-between;
+	}
+	.nav {
+		top: 50px;
+	}
+	.header {
+		&__box {
+			width: 50%;
+		}
+	}
+
+	.about {
+		&__boxes {
+			flex-direction: row;
+			justify-content: center;
+		}
+		&__box {
+			&-info {
+				width: 50%;
+			}
+			width: 100%;
+			&-title {
+				font-size: 2rem;
+			}
+			&-lead {
+				font-size: 1.4rem;
+			}
+			&-btn {
+				width: 40%;
+				margin: 1em 0;
+			}
+			&-img {
+				background-image: url(../img/small-bathroom-with-modern-design-style.jpg);
+				background-position: center;
+				background-size: cover;
+				transition: all 1s;
+
+				&:hover {
+					transform: scale(0.9);
+					height: 100vh;
+					border-radius: 8px;
+				}
+			}
+		}
+	}
+	.packages{
+		&__boxes{
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		&__box{
+			width: 30%;
+		}
+	}
+}
